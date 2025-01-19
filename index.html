@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="./rps.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script>
-        playGame();
-    </script>
+    <div class="container">
+        <div class="game-end"></div>
+        <div class="scoreboard">
+            <div>Player: <span class="player-score">0</span></div>
+            <div>Computer: <span class="computer-score">0</span></div>
+        </div>
+        
+        <div class="buttons">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>    
 
+        <div class="results">
+            <div>You chose: <span class="player-choice">nothing</span></div>
+            <div>Computer chose: <span class="computer-choice">nothing</span></div>
+            <div>Round Winner: <span class="round-winner">nothing</span></div>
+        </div>
+    </div>
+
+    <script src="./events.js" type="module"></script>
 </body>
 </html>
